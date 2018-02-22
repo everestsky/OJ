@@ -23,8 +23,8 @@ export class NewProblemComponent implements OnInit {
   }
 
   addProblem() {
-    this.dataService.addProblem(this.newProblem);
+    // this.dataService.addProblem(this.newProblem);
+    this.dataService.addProblem(this.newProblem); // homework: error handle
     this.newProblem = Object.assign({}, DEFAULT_PROBLEM);
   }
-
 }
